@@ -70,7 +70,10 @@ export const GetInTouch = () => {
         duration: 0.5,
       }}
     >
-      <div className="flex flex-col gap-6 rounded-[11px] p-4 lg:p-6">
+      <div
+        className="flex flex-col gap-6 rounded-[11px] p-4 lg:p-6"
+        id="contact-me"
+      >
         <div className="flex gap-12 max-md:flex-col">
           <div className="relative size-64 max-md:mx-auto" ref={scope}>
             <Image

@@ -6,7 +6,10 @@ type Props = {};
 const ExperiencePage = (props: Props) => {
   return (
     <div className="mb-16">
-      <PageTitle title="Experience" description="👋 Hi there! I am Harsh." />
+      <PageTitle
+        title="Experience"
+        description="Exploring Professional Journey 🚀"
+      />
       <Experience />
     </div>
   );

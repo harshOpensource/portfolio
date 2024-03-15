@@ -1,12 +1,8 @@
 import {
-  type IconType,
-  SiFacebook,
   SiGithub,
-  SiInstagram,
-  SiX,
-  SiYoutube,
-  SiLinkedin,
   SiGmail,
+  SiLinkedin,
+  type IconType,
 } from "@icons-pack/react-simple-icons";
 import {
   BarChartIcon,
@@ -65,7 +61,7 @@ export const HEADER_LINKS: HeaderLinks = [
   },
   {
     icon: <MonitorIcon className="size-3.5" />,
-    href: "/contact",
+    href: "#contact-me",
     text: "contact",
   },
 ];
@@ -87,7 +83,7 @@ export const FOOTER_LINKS: FooterLinks = [
         text: "About",
       },
       {
-        href: "/contact",
+        href: "#contact-me",
         text: "Contact",
       },
     ],
@@ -108,7 +104,7 @@ export const FOOTER_LINKS: FooterLinks = [
         text: "Projects",
       },
       {
-        href: "/contact",
+        href: "#contact-me",
         text: "Links",
       },
     ],

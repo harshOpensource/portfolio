@@ -1,3 +1,4 @@
+import Education from "@/components/education";
 import PageTitle from "@/components/projects/page-title";
 
 type Props = {};
@@ -5,7 +6,11 @@ type Props = {};
 const EducationPage = (props: Props) => {
   return (
     <div>
-      <PageTitle title="Education" description="👋 Hi there! I am Harsh." />
+      <PageTitle
+        title="Education"
+        description="Exploring Data Science and IT Learning Journeys ✨📚"
+      />
+      <Education />
     </div>
   );
 };
