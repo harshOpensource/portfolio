@@ -78,7 +78,7 @@ export const Hero = () => {
               India • GMT +5:30
             </div>
             <a
-              href="https://drive.google.com/file/d/1jlgtzFS2Ueld7HYq-u_yJHPawMi_w9iq/view?usp=sharing"
+              href="https://drive.google.com/file/d/1N5Z5up0-eRuLBnMG-6Yt6obTjuVMTKWw/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
