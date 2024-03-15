@@ -1,16 +1,59 @@
 "use client";
 
 import PageTitle from "@/components/projects/page-title";
+import {
+  SiDrizzle,
+  SiEthereum,
+  SiFigma,
+  SiFirebase,
+  SiFlask,
+  SiGit,
+  SiGraphql,
+  SiJinja,
+  SiMongodb,
+  SiMysql,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiNotion,
+  SiPostgresql,
+  SiPrisma,
+  SiPusher,
+  SiPython,
+  SiReact,
+  SiSupabase,
+  SiTailwindcss,
+  SiTypescript,
+  SiVercel,
+  SiVisualstudiocode,
+  SiVuedotjs,
+} from "@icons-pack/react-simple-icons";
 import { StarFilledIcon } from "@radix-ui/react-icons";
 import { ArrowUpRightFromSquareIcon, Star } from "lucide-react";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import Marquee from "react-fast-marquee";
 
-type Props = {};
+interface Repo {
+  name: string;
+  description: string;
+  topics: string[];
+  forks_count: number;
+  html_url: string;
+  language: string;
+  watchers: number;
+  homepage: string;
+  pushed_at: string;
+}
 
-const AboutPage = (props: Props) => {
-  const [repos, setRepos] = useState<any>();
-  const [user, setUser] = useState<any>();
+interface User {
+  avatar_url: string;
+  html_url: string;
+  name: string;
+}
+
+const AboutPage = () => {
+  const [repos, setRepos] = useState<Repo[]>();
+  const [user, setUser] = useState<User>();
 
   const getData = async () => {
     const [gitUserRes, gitReposRes] = await Promise.all([
@@ -27,20 +70,66 @@ const AboutPage = (props: Props) => {
     setRepos(filteredRepos);
 
     // now who does not have homepage
-    const filteredReposs = repoData.filter((repo: any) => !repo.homepage);
-    setRepos((prev: any) => [...prev, ...filteredReposs]);
+    /*  const filteredReposs = repoData.filter((repo: any) => !repo.homepage);
+    setRepos((prev: any) => [...prev, ...filteredReposs]); */
   };
 
   useEffect(() => {
     getData();
   }, []);
   return (
-    <div className="mb-16">
+    <div className="mb-8">
       <PageTitle title="About me" description="👋 Hi there! I am Harsh." />
+
+      {/*  */}
       {user && (
-        <div className="text-muted-foreground text-2xl mb-6 font-semibold">
-          Recent Projects
-        </div>
+        <>
+          <div className="mb-4 text-pretty leading-8">
+            I am a Full Stack Web Developer and AI Enthusiast. With a keen eye
+            for crafting unique solutions, I thrive on pushing the boundaries of
+            what's possible in web development and artificial intelligence
+            integration. My journey in technology has been marked by a
+            relentless pursuit of mastery in cutting-edge tools and frameworks.
+            From my proficiency in Blockchain to my specialization in
+            integrating third-party apps with GPT tailored for businesses, I
+            bring a diverse skill set to the table. In the realm of web
+            development, my expertise spans Next.js, GraphQL, Node.js, and Full
+            Stack Development. I pride myself on my ability to leverage
+            technologies like Python, Postgres, and MongoDB to create efficient,
+            and scalable applications that resonate with users.
+          </div>
+          <div className="mb-8">
+            <Marquee className="py-4 flex gap-3" pauseOnHover direction="right">
+              <SiTypescript className="size-10 ml-4" />
+              <SiFigma className="size-10 ml-4" />
+              <SiTailwindcss className="size-10 ml-4" />
+              <SiNextdotjs className="size-10 ml-4" />
+              <SiReact className="size-10 ml-4" />
+              <SiPython className="size-10 ml-4" />
+              <SiPostgresql className="size-10 ml-4" />
+              <SiMongodb className="size-10 ml-4" />
+              <SiGraphql className="size-10 ml-4" />
+              <SiFlask className="size-10 ml-4" />
+              <SiJinja className="size-10 ml-4" />
+              <SiEthereum className="size-10 ml-4" />
+              <SiMysql className="size-10 ml-4" />
+              <SiVisualstudiocode className="size-10 ml-4" />
+              <SiPrisma className="size-10 ml-4" />
+              <SiNodedotjs className="size-10 ml-4" />
+              <SiFirebase className="size-10 ml-4" />
+              <SiGit className="size-10 ml-4" />
+              <SiDrizzle className="size-10 ml-4" />
+              <SiVercel className="size-10 ml-4" />
+              <SiVuedotjs className="size-10 ml-4" />
+              <SiNotion className="size-10 ml-4" />
+              <SiPusher className="size-10 ml-4" />
+              <SiSupabase className="size-10 ml-4" />
+            </Marquee>
+          </div>
+          <div className="text-muted-foreground text-2xl mb-6 font-semibold">
+            Recent Projects
+          </div>
+        </>
       )}
 
       {user && (

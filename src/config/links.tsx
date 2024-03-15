@@ -49,6 +49,16 @@ export const HEADER_LINKS: HeaderLinks = [
     text: "Projects",
   },
   {
+    icon: <PencilIcon className="size-3.5" />,
+    href: "/education",
+    text: "Education",
+  },
+  {
+    icon: <MessageCircleIcon className="size-3.5" />,
+    href: "/experience",
+    text: "Experience",
+  },
+  {
     icon: <UserCircleIcon className="size-3.5" />,
     href: "/about",
     text: "About",
@@ -86,19 +96,19 @@ export const FOOTER_LINKS: FooterLinks = [
     id: 2,
     links: [
       {
-        href: "/guestbook",
-        text: "Guestbook",
+        href: "/education",
+        text: "Education",
       },
       {
-        href: "/uses",
-        text: "Uses",
+        href: "/experience",
+        text: "Experience",
       },
       {
         href: "/projects",
         text: "Projects",
       },
       {
-        href: "https://links.honghong.me",
+        href: "/contact",
         text: "Links",
       },
     ],
