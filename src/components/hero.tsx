@@ -3,6 +3,7 @@
 import { motion, useAnimate } from "framer-motion";
 import Image from "next/image";
 import { useEffect } from "react";
+import { Button } from "./ui/button";
 
 const TEXTS = [
   {
@@ -72,7 +73,20 @@ export const Hero = () => {
             </div>{" "}
             websites using Typescript and Python.
           </h1>
-          <div className="text-sm text-muted-foreground">India • GMT +5:30</div>
+          <div className="flex items-center gap-8">
+            <div className="text-sm text-muted-foreground">
+              India • GMT +5:30
+            </div>
+            <a
+              href="https://drive.google.com/file/d/1jlgtzFS2Ueld7HYq-u_yJHPawMi_w9iq/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant={"outline"} className="py-3" size={"lg"}>
+                Download Resume
+              </Button>
+            </a>
+          </div>
         </motion.div>
         <motion.div
           className="relative"
