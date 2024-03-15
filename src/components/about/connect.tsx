@@ -19,6 +19,8 @@ export const Connect = () => {
           return (
             <Link
               key={href}
+              target="_blank"
+              rel="noopener noreferrer"
               href={href}
               className="flex items-center gap-3 text-muted-foreground transition-colors hover:text-foreground"
             >

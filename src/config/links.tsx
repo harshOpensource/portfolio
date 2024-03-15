@@ -39,19 +39,9 @@ type SocialLinks = Array<{
 
 export const HEADER_LINKS: HeaderLinks = [
   {
-    icon: <PencilIcon className="size-3.5" />,
-    href: "/blog",
-    text: "Blog",
-  },
-  {
-    icon: <MessageCircleIcon className="size-3.5" />,
-    href: "/guestbook",
-    text: "Guestbook",
-  },
-  {
     icon: <BarChartIcon className="size-3.5" />,
-    href: "/dashboard",
-    text: "Dashboard",
+    href: "/",
+    text: "Home",
   },
   {
     icon: <FlameIcon className="size-3.5" />,
@@ -65,8 +55,8 @@ export const HEADER_LINKS: HeaderLinks = [
   },
   {
     icon: <MonitorIcon className="size-3.5" />,
-    href: "/uses",
-    text: "Uses",
+    href: "/contact",
+    text: "contact",
   },
 ];
 
@@ -79,16 +69,16 @@ export const FOOTER_LINKS: FooterLinks = [
         text: "Home",
       },
       {
-        href: "/blog",
-        text: "Blog",
+        href: "/projects",
+        text: "Projects",
       },
       {
         href: "/about",
         text: "About",
       },
       {
-        href: "/dashboard",
-        text: "Dashboard",
+        href: "/contact",
+        text: "Contact",
       },
     ],
   },
@@ -117,20 +107,16 @@ export const FOOTER_LINKS: FooterLinks = [
     id: 3,
     links: [
       {
-        href: "https://www.facebook.com/tszhong0411/",
-        text: "Facebook",
-      },
-      {
-        href: "https://www.instagram.com/tszhong0411/",
-        text: "Instagram",
-      },
-      {
-        href: "https://github.com/tszhong0411",
+        href: "https://github.com/harshOpensource",
         text: "GitHub",
       },
       {
-        href: "https://www.youtube.com/@tszhong0411",
-        text: "YouTube",
+        href: "https://www.linkedin.com/in/harsh-bardhan-ai/",
+        text: "LinkedIn",
+      },
+      {
+        href: "mailto:harsh@onboardai.tech",
+        text: "Email",
       },
     ],
   },
@@ -138,17 +124,17 @@ export const FOOTER_LINKS: FooterLinks = [
 
 export const SOCIAL_LINKS: SocialLinks = [
   {
-    href: "https://github.com/tszhong0411",
+    href: "https://github.com/harshOpensource",
     title: "GitHub",
     icon: SiGithub,
   },
   {
-    href: "https://www.facebook.com/tszhong0411/",
+    href: "mailto:harsh@onboardai.tech",
     title: "Email",
     icon: SiGmail,
   },
   {
-    href: "https://www.instagram.com/tszhong0411/",
+    href: "https://www.linkedin.com/in/harsh-bardhan-ai/",
     title: "Linkedin",
     icon: SiLinkedin,
   },
