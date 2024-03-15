@@ -145,7 +145,7 @@ export const GetInTouch = () => {
                 href="mailto:me@honghong.me"
                 className="rounded-full bg-email-button px-4 py-2 text-sm text-white"
               >
-                harsh@onboardai.tech
+                harshopensource@gmail.com
               </a>
             </div>
           </div>

@@ -121,7 +121,7 @@ export const FOOTER_LINKS: FooterLinks = [
         text: "LinkedIn",
       },
       {
-        href: "mailto:harsh@onboardai.tech",
+        href: "mailto:harshopensource@gmail.com",
         text: "Email",
       },
     ],
@@ -135,7 +135,7 @@ export const SOCIAL_LINKS: SocialLinks = [
     icon: SiGithub,
   },
   {
-    href: "mailto:harsh@onboardai.tech",
+    href: "mailto:harshopensource@gmail.com",
     title: "Email",
     icon: SiGmail,
   },
