@@ -32,7 +32,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider
           storageKey="portfolio-theme"
-          defaultTheme="dark"
+          defaultTheme="light"
           enableSystem
           attribute="class"
         >

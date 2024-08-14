@@ -17,9 +17,56 @@ const animation = {
   },
 };
 
-function Experience({}: Props) {
+function Experience({ }: Props) {
   return (
+
+
     <motion.div initial={animation.hide} animate={animation.show}>
+      <div className="border-[1px] rounded-lg p-[2rem] my-5">
+        <div className="flex flex-col gap-[2px]">
+          <div className="text-lg mb-2">
+            Full Stack Developer
+          </div>
+          <div className="text-sm text-muted-foreground">Rezcomm, Exter, United Kingdom</div>
+          <div className="text-sm text-muted-foreground">
+            Full-time
+          </div>
+          <div className="text-sm text-muted-foreground">
+            May 2024 - Present
+          </div>
+        </div>
+
+        <div className="mt-5">
+          Rezcomm is committed to delivering world-class solutions for
+          Airports, Parking Operators and other venue based organisations
+          worldwide. We offer a unified and turnkey E-commerce, CRM,
+          Analytics, Parking, BI and OTA solutions.
+        </div>
+      </div>
+
+      <div className="border-[1px] rounded-lg p-[2rem] my-5">
+        <div className="flex flex-col gap-[2px]">
+          <div className="text-lg mb-2">
+            Software Engineer
+          </div>
+          <div className="text-sm text-muted-foreground">Perimattic Pvt Ltd</div>
+          <div className="text-sm text-muted-foreground">
+            Part-time
+          </div>
+          <div className="text-sm text-muted-foreground">
+            Jan 2024 - May 2024
+          </div>
+        </div>
+
+        <div className="mt-5">
+          Developed frontend features and components for Clouthub, a
+          social media platform promoting free speech in the USA, using
+          Vue.js, typescript, supported by scalable AWS infrastructure
+          including EC2 and RDS. Developed GraphQL APIs to efficiently serve data to Vue.js
+          frontend applications, leveraging Apollo Client for seamless data
+          communication and real-time updates.
+        </div>
+      </div>
       <div className="border-[1px] rounded-lg p-[2rem] my-5">
         <div className="flex flex-col gap-[2px]">
           <div className="text-lg mb-2">
@@ -30,7 +77,7 @@ function Experience({}: Props) {
             Permanent Part-time
           </div>
           <div className="text-sm text-muted-foreground">
-            Dec 2023 - Present · 3 months
+            Dec 2023 - Present
           </div>
         </div>
 
@@ -113,7 +160,7 @@ function Experience({}: Props) {
             Contract Part-time
           </div>
           <div className="text-sm text-muted-foreground">
-            Jun 2022 - Present · 2+ years
+            Jun 2022 - Present
           </div>
         </div>
 
